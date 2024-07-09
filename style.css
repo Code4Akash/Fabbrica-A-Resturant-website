@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  overflow-x: hidden;
+}
+/* page1 starts here */
+.page1 {
+  height: 100vh;
+  width: 100%;
+}
+/* navbar */
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.nav-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.nav-contain h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 26px;
+}
+/* images */
+.divider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  transition: transform 1.2s ease-in-out; /* Smooth transition */
+}
+.left img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: 1.2s ease-in-out; /* Smooth transition */
+  transform: translateY(-100%);
+}
+
+.right {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  transition: 1.2s ease-in-out; /* Smooth transition */
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(100%);
+  transition: 1.2s ease-in-out; /* Smooth transition */
+}
+/* header */
+.header {
+  position: relative;
+  width: 750px;
+  bottom: 50%;
+  left: 50%;
+}
+.headcontain {
+  width: 100%;
+  transform: translateX(-50%);
+}
+.header h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 46px;
+}
+.header span {
+  font-style: italic;
+  color: #fff;
+  font-size: 40px;
+}
+.flex {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+/* Page1 ends here */
+/* Page 2 */
+.page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111111;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.headings {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.headings h4 {
+  color: #e11010;
+  font-size: 14px;
+  text-align: center;
+}
+
+.headings h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin: 25px 0;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.headings h1:hover {
+  transform: scale(1.05);
+}
+
+#fixed-img2,
+#fixed-img3 {
+  height: 60vh;
+  width: 23vw;
+  position: absolute;
+  z-index: 99;
+  display: none;
+  background-position: center;
+  background-size: cover;
+}
+
+#fixed-img2 {
+  left: 70%;
+  top: 21%;
+}
+
+#fixed-img3 {
+  left: 8%;
+  top: 21%;
+}
+
+/* Footer styles */
+
+/* Basic Reset */
+body,
+html,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.layout-item-logo img {
+  width: 50px; /* Adjust according to your logo size */
+}
+
+.layout-item-content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-layout {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.layout-item {
+  margin-right: 40px;
+  flex: 1 1 200px; /* Adjusts the flex basis for responsive design */
+}
+
+.list-label {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #f4ecd9;
+  font-weight: 500;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  margin-bottom: 5px;
+}
+
+.list-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.list-item a:hover {
+  text-decoration: underline;
+}
+
+.layout-item-credits {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.credits-layout {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.half {
+  flex: 1;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links span {
+  margin: 0 5px;
+  color: #fff;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Ensure children can be aligned properly */
+}
+
+.hamburger-left {
+  background-color: #222222;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden; /* Ensure content inside does not overflow */
+}
+
+.hamburger-right {
+  width: 50vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.hamburger-divider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titles h4 {
+  color: #e11010;
+  font-size: 14px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.titles h1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 25px 0;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.titles h1:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.titles {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#fixed-img {
+  height: 60vh;
+  width: 25vw;
+  position: absolute;
+  z-index: 99;
+  left: 60%;
+  top: 21%;
+  display: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.hamburger-container {
+  position: absolute; /* Instead of absolute, use fixed to take full screen width */
+  top: 0;
+  left: 0;
+  width: 100%; /* Use 100% instead of 100vw */
+  height: 100vh;
+  display: none;
+  z-index: 1000;
+}
+
+.hamburger-container.show {
+  display: block;
+}
+
+.hamburger-left,
+.hamburger-right {
+  position: relative;
+  transition: transform 1.2s ease-in-out; /* Adjusted transition */
+}
+
+.hamburger-left {
+  transform: translateY(-100%); /* Changed translateY to translateX */
+}
+
+.hamburger-right {
+  transform: translateY(100%); /* Changed translateY to translateX */
+}
+
+.hamburger-icons {
+  display: flex;
+  /* Add any additional styles as needed */
+}
+
+/* Slider */
+
+/* Scroller container styles */
+.scroller-container {
+  max-width: 800px; /* adjust the max width to your liking */
+  margin: 40px auto;
+  overflow: hidden;
+  display: none;
+}
+
+/* Scroller wrapper styles */
+.scroller-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Image list styles */
+.image-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.image-list li {
+  margin-right: 20px; /* adjust the margin to your liking */
+}
+
+.image-list img {
+  width: 200px; /* adjust the width to your liking */
+  height: 150px; /* adjust the height to your liking */
+  object-fit: cover;
+  border-radius: 10px; /* adjust the border radius to your liking */
+}
+/* Slider ends */
+
+/* Media Queries */
+
+@media screen and (max-width: 1400px) {
+  .flex-layout,
+  .layout {
+    margin: 0 40px;
+  }
+
+  .layout-item-credits {
+    padding: 0 160px;
+  }
+  .scroller-container {
+    display: block;
+  }
+  #fixed-img2,
+  #fixed-img3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-layout,
+  .layout {
+    margin: 0 20px;
+  }
+
+  .layout-item-credits {
+    padding: 0px 80px;
+  }
+  .hamburger-left {
+    width: 50vw;
+  }
+  .hamburger-right {
+    width: 50vw;
+  }
+  #fixed-img {
+    height: 50vh;
+    width: 20vw;
+    left: 55%;
+    top: 25%;
+  }
+  .titles h4 {
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+  .titles h1 {
+    font-size: 25px;
+    margin: 10px 0px;
+  }
+
+}
+
+
+/* Responsive styles for widths of 768px and smaller */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    padding: 0 10px;
+  }
+  .layout {
+    flex-wrap: wrap;
+  }
+  .layout-item {
+    margin-right: 20px;
+    flex: 1 1 150px;
+  }
+  .layout-item-content {
+    margin-left: 10px;
+  }
+  .flex-layout {
+    flex-wrap: wrap;
+  }
+  .layout-item-credits {
+    flex-wrap: wrap;
+  }
+  .credits-layout {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .half {
+    flex: 1 1 100%;
+  }
+  .links {
+    flex-wrap: wrap;
+  }
+  .links a {
+    font-size: 10px;
+  }
+  .links span {
+    margin: 0 2px;
+  }
+  #fixed-img {
+    height: 40vh;
+    width: 30%;
+    left: 60%;
+    top: 30%;
+  }
+  .titles h4 {
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+  .titles h1 {
+    font-size: 22px;
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    position: relative;
+    height: auto;
+  }
+
+  .flex-layout {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .layout {
+    margin: 0;
+  }
+
+  .layout-item-content {
+    padding-top: 15px;
+  }
+
+  .layout-item-credits {
+    padding: 0px 40px;
+    flex-direction: column;
+  }
+
+  .layout-item-logo {
+    margin-left: 0;
+  }
+  .titles h4 {
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+  .titles h1 {
+    font-size: 22px;
+    margin: 10px 0px;
+  }
+  .header h1 {
+    font-size: 30px;
+  }
+  .header span {
+    font-size: 30px;
+  }
+  .nav-contain h1 {
+    font-size: 20px;
+  }
+  .nav-contain img {
+    width: 20px;
+  }
+  .headings h1 {
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-container {
+    position: relative;
+    height: auto;
+  }
+
+  .flex-layout {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .layout {
+    margin: 0;
+  }
+
+  .layout-item-content {
+    padding-top: 15px;
+  }
+
+  .layout-item-credits {
+    padding: 0px 40px;
+    flex-direction: column;
+  }
+
+  .layout-item-logo {
+    margin-left: 0;
+  }
+  .header h1 {
+    font-size: 30px;
+  }
+  .header span {
+    font-size: 30px;
+  }
+  .nav-contain h1 {
+    font-size: 20px;
+  }
+  .nav-contain img {
+    width: 20px;
+  }
+  .headings h1 {
+    font-size: x-large;
+  }
+  .list-label {
+   color:  #f4ecd9;
+  }
+  #fixed-img {
+    height: 20vh;
+    width: 40vw;
+    left: 55%;
+    top: 40%;
+  }
+  .titles h4 {
+    font-size: 15px;
+    padding: 10px 0px;
+  }
+  .titles h1 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+
+}
+
